@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSVP for Bharatanatyam Arangetram</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="invitation.jpg" alt="Invitation" class="invitation-image">
+        <h2>Please RSVP by July 4th, 2024</h2>
+        <form action="submit_rsvp.php" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="guests">Number of Guests</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit">Submit RSVP</button>
+        </form>
+    </div>
+</body>
+</html>
